@@ -2,8 +2,8 @@ import React from "react";
 
 const Aside = () => {
   return (
-    <div className="position-absolute bg-white p-4 top-0 end-0 w-25">
-      <div className="d-flex w-75">
+    <div className="position-absolute rounded bg-white p-4 top-0 end-0 w-25">
+      <div className="d-flex">
         <div className=" w-25 h-25 me-3">
           <img
             className="rounded-circle w-100 h-100"
@@ -18,21 +18,56 @@ const Aside = () => {
       </div>
       <div className="bg-secondary text-light p-4 rounded my-5">
         <div className="row">
-          <h3 className="col-4">
+          <h4 className="col-lg-4">
             75<span className="fw-light fs-5">kg </span>
-          </h3>
-          <h3 className="col-4">
+          </h4>
+          <h4 className="col-lg-4">
             6.5<span className="fw-light fs-5">inch </span>
-          </h3>
-          <h3 className="col-4">
+          </h4>
+          <h4 className="col-lg-4">
             25<span className="fw-light fs-5">yrs </span>
-          </h3>
+          </h4>
         </div>
         <div className="row">
-          <span className="col-4"> Weight</span>
-          <span className="col-4"> Height</span>
-          <span className="col-4"> Age</span>
+          <span className="col-lg-4"> Weight</span>
+          <span className="col-lg-4"> Height</span>
+          <span className="col-lg-4"> Age</span>
         </div>
+      </div>
+      <div>
+        <h4>Break Time</h4>
+        <div className="row bg-secondary p-3 rounded justify-content-center">
+          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+            <span>20</span>s
+          </button>
+          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+            <span>30</span>s
+          </button>
+          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+            <span>40</span>s
+          </button>
+          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+            <span>50</span>s
+          </button>
+        </div>
+      </div>
+      <div className="mt-5">
+        <h4>Exercise Details:</h4>
+        <div className="bg-secondary rounded px-4 py-2 text-light">
+          <h5>
+            Exercise Time: <span></span> s
+          </h5>
+        </div>
+        <div className="bg-secondary rounded  px-4 py-2 text-light mt-3">
+          <h5>
+            Break Time: <span></span> s
+          </h5>
+        </div>
+      </div>
+      <div className="row">
+        <button className=" border mt-5 p-3 bg-primary fw-bold fs-5 text-white rounded">
+          Complete Activity
+        </button>
       </div>
     </div>
   );
