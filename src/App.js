@@ -3,7 +3,7 @@ import Menubar from "./components/Menubar/Menubar";
 import Cart from "./components/Cart/Cart";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
-import Item from "./components/Item/Item";
+import Aside from "./components/Aside/Aside";
 // import Item from "./components/Item/Item";
 function App() {
   // let cartItem = Cart;
@@ -17,8 +17,9 @@ function App() {
           Exercise Daily, Build Body
         </h1>
         <h5 className="mt-4">Choose your Exercise</h5>
-        <div>
+        <div className="position-relative">
           <Cart></Cart>
+          <Aside></Aside>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Cart = () => {
       .then((data) => setCarts(data));
   }, []);
   return (
-    <div className="row">
+    <div className="row w-75">
       {carts.map((cart) => (
         <Item key={cart.id} cart={cart}></Item>
       ))}
