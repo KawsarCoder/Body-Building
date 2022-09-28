@@ -1,44 +1,50 @@
 [
   {
-    "image": "../src/images/Pushup.jpg",
+    "id": "101",
+    "img": "https://www.muscleandfitness.com/wp-content/uploads/2018/02/1109-feet-elevated-pushup.jpg?w=800&quality=86&strip=all",
     "name": "Push up",
-    "time": "90s",
+    "time": "5",
     "age": "15-40",
-    "details": "This exercise is very help for us. We do it every day and you body is improve day by day. It's help to grow you body healthy."
+    "details": "Push sth up to make something higher in level or amount: The increase in the price of raw materials has pushed up our costs."
   },
   {
-    "image": "../src/images/Pushup.jpg",
-    "name": "Push up",
-    "time": "90s",
+    "id": "102",
+    "img": "https://www.fitnesseducation.edu.au/wp-content/uploads/2020/10/Walking-Lunges-M-e1586314590852.jpg",
+    "name": "Lunges",
+    "time": "20",
     "age": "15-40",
-    "details": "This exercise is very help for us. We do it every day and you body is improve day by day. It's help to grow you body healthy."
+    "details": "Lunges increase muscle mass to build up strength and tone your body, especially your core, butt, and legs."
   },
   {
-    "image": "../src/images/Pushup.jpg",
-    "name": "Push up",
-    "time": "90s",
+    "id": "103",
+    "img": "https://hips.hearstapps.com/hmg-prod/images/mature-strong-man-lifting-weights-at-cross-training-royalty-free-image-1651253779.jpg?crop=1.00xw:0.752xh;0,0.212xh&resize=640:*",
+    "name": "Squats",
+    "time": "10",
     "age": "15-40",
-    "details": "This exercise is very help for us. We do it every day and you body is improve day by day. It's help to grow you body healthy."
+    "details": "Start standing with feet wider than shoulders, toes turned out so inner thighs point forward. · Clasp hands in front of chest."
   },
   {
-    "image": "../src/images/Pushup.jpg",
-    "name": "Push up",
-    "time": "90s",
+    "id": "104",
+    "img": "https://www.bodybuilding.com/images/2018/december/one-tip-to-maximize-your-dumbbell-row-header-960x540.jpg",
+    "name": "Dumbbell rows",
+    "time": "90",
     "age": "15-40",
-    "details": "This exercise is very help for us. We do it every day and you body is improve day by day. It's help to grow you body healthy."
+    "details": "Dumbbell rows put special emphasis on your back muscles, including the latissimus dorsi, posterior deltoids, teres major, trapezius, and rhomboids."
   },
   {
-    "image": "../src/images/Pushup.jpg",
-    "name": "Push up",
+    "id": "105",
+    "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2019/08/Single-leg-RDL-with-Brace-2.jpg",
+    "name": "Single-leg deadlifts",
     "time": "90s",
     "age": "15-40",
-    "details": "This exercise is very help for us. We do it every day and you body is improve day by day. It's help to grow you body healthy."
+    "details": "The single-leg RDL works all the same muscles as any other deadlift variant, so you know you're getting a great workout for your glutes, hamstrings, lats, and spinal erectors (just to name a few)."
   },
   {
-    "image": "../src/images/Pushup.jpg",
-    "name": "Push up",
+    "id": "106",
+    "img": "https://post.healthline.com/wp-content/uploads/2020/11/side-plank-at-the-gym-732x549-thumbnail-732x549.jpg",
+    "name": "Side planks",
     "time": "90s",
     "age": "15-40",
-    "details": "This exercise is very help for us. We do it every day and you body is improve day by day. It's help to grow you body healthy."
+    "details": "Side planks work the deep spinal stabilizing muscle quadratus lumborum . Keeping this muscle strong can help reduce your risk of a back injury. "
   }
 ]
