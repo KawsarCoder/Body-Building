@@ -1,12 +1,14 @@
 import React from "react";
-
+import "./Blog.css";
 const Blog = () => {
   return (
-    <div>
+    <div id="blog-wrapper" className="d-blog text-center">
       <div className="d-flex justify-content-center">
-        <h1 className="mt-5 text-primary fw-bold fs-1">Blog</h1>
+        <h1 id="blog-text" className="mt-5 text-primary fw-bold fs-1">
+          Blog
+        </h1>
       </div>
-      <div className="blog-wrap d-block text-center mt-5 container w-50">
+      <div className="blog-wrap d-block text-center mt-5 container">
         <div className="blog-content bg-secondary p-5 rounded text-white mt-4">
           <h4 className="text-info">Question-01: How does react work?</h4>
           <p>
@@ -17,7 +19,9 @@ const Blog = () => {
           </p>
         </div>
         <div className="blog-content bg-secondary p-5 rounded text-white mt-4">
-          <h4 className="text-info">Question-01: </h4>
+          <h4 className="text-info">
+            Question-02: What's the difference between props and state
+          </h4>
           <p>
             Props are used to pass data from one component to another. The state
             is a local data storage that is local to the component only and
@@ -25,13 +29,15 @@ const Blog = () => {
           </p>
         </div>
         <div className="blog-content bg-secondary p-5 rounded text-white mt-4">
-          <h4 className="text-info">Question-01: </h4>
+          <h4 className="text-info">
+            Question-03: What is the use effect work without API data load
+          </h4>
           <p>
             React useEffect hooks are powerful to run side effects, but it is
             easy to omit dependencies and create bugs in your app. The useEffect
             Hook allows you to perform side effects in your components. Some
             examples of side effects are: directly updating the DOM, and timers.
-            useEffect accepts two arguments.{" "}
+            useEffect accepts two arguments.
           </p>
         </div>
       </div>

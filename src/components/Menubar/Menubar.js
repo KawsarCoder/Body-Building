@@ -26,7 +26,7 @@ const Menubar = () => {
             <a class="nav-item nav-link active" href="../../index.js">
               Home
             </a>
-            <a class="nav-item nav-link" href="../Blog/Blog.js">
+            <a class="nav-item nav-link" href="../../index.js">
               Blog
             </a>
           </div>
