@@ -1,9 +1,10 @@
 import React from "react";
 const Item = (props) => {
-  // const {buttonClick} = props
+  // destructuring props  
   const { name, time, details, img, age } = props.cart;
-  // console.log(props.durations);
+
   return (
+    // dynamic exercise value created 
     <div className="bg-secondary text-white p-3 m-4 rounded col-lg-3 col-md-6 col-sm-10 col-10">
       <img className="w-100 rounded" src={img} alt=""></img>
       <h4 className="mt-3">Name: {name}</h4>

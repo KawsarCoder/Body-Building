@@ -1,10 +1,12 @@
 import React from "react";
+// side bar link added 
 import Aside from "../Aside/Aside";
+
 const Localdb = ({ brakes, durations, brakeTimeClick }) => {
+  
   localStorage.setItem("defult", 0);
   let timeDuration = localStorage.getItem("brake");
-
-  //   console.log(timeDuration);
+  // local Storage value check 
   if (brakes) {
     localStorage.setItem("brake", brakes);
   } else {
@@ -12,6 +14,7 @@ const Localdb = ({ brakes, durations, brakeTimeClick }) => {
   }
   return (
     <div>
+      {/* side var dynamic value form local storage  */}
       <Aside
         durations={durations}
         brakes={timeDuration}
