@@ -1,8 +1,13 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Aside = (props) => {
   const { durations, brakeTimeClick, brakes } = props;
-
+  const notify = () =>
+    toast.success("Congratulations, You're done well! Keep it up!!!", {
+      position: "top-center",
+    });
   return (
     <div className="position-absolute rounded bg-white p-4 top-0 end-0 w-25">
       <div className="d-flex">
@@ -78,9 +83,13 @@ const Aside = (props) => {
         </div>
       </div>
       <div className="row">
-        <button className=" border mt-5 py-3 bg-primary fw-bold fs-5 text-white rounded">
+        <button
+          onClick={notify}
+          className=" border mt-5 py-2 bg-primary fw-bold fs-5 text-white rounded"
+        >
           Complete Activity
         </button>
+        <ToastContainer />
       </div>
     </div>
   );

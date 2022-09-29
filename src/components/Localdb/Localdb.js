@@ -2,7 +2,7 @@ import React from "react";
 import Aside from "../Aside/Aside";
 const Localdb = ({ brakes, durations, brakeTimeClick }) => {
   let timeDuration = localStorage.getItem("brake");
-  console.log(timeDuration);
+//   console.log(timeDuration);
   if (brakes) {
     localStorage.setItem("brake", brakes);
   } else {
