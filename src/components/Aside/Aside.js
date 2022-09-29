@@ -1,10 +1,8 @@
 import React from "react";
-// import Cart from "../Cart/Cart";
 
 const Aside = (props) => {
-  const { durations, brakes, brakeTimeClick } = props;
-  // console.log(durations);
-  console.log(props);
+  const { durations, brakeTimeClick, brakes } = props;
+
   return (
     <div className="position-absolute rounded bg-white p-4 top-0 end-0 w-25">
       <div className="d-flex">

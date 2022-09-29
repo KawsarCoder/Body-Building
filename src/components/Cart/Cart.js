@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Item from "../Item/Item";
-import Aside from "../Aside/Aside";
+// import Aside from "../Aside/Aside";
+import Localdb from "../Localdb/Localdb";
 
 const Cart = () => {
   const [carts, setCarts] = useState([]);
@@ -18,7 +19,8 @@ const Cart = () => {
   let brakeTimeClick = (time) => {
     // console.log(time);
     setBrakes(parseFloat(time));
-    localStorage.setItem("brake", time);
+
+    // localStorage.setItem("brake", time);
   };
 
   return (
@@ -28,11 +30,14 @@ const Cart = () => {
           <Item key={cart.id} cart={cart} buttonClick={buttonClick}></Item>
         ))}
       </div>
-      <Aside
-        durations={durations}
-        brakes={brakes}
-        brakeTimeClick={brakeTimeClick}
-      ></Aside>
+      <div></div>
+      <div>
+        <Localdb
+          brakes={brakes}
+          brakeTimeClick={brakeTimeClick}
+          durations={durations}
+        ></Localdb>
+      </div>
     </div>
   );
 };
