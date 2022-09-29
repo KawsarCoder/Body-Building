@@ -3,6 +3,7 @@ import Menubar from "./components/Menubar/Menubar";
 import Cart from "./components/Cart/Cart";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import Blog from "./components/Blog/Blog";
 function App() {
   // let cartItem = Cart;
   // console.log(cartItem);
@@ -18,6 +19,9 @@ function App() {
         <div className="position-relative">
           <Cart></Cart>
         </div>
+      </div>
+      <div>
+        <Blog></Blog>
       </div>
     </div>
   );

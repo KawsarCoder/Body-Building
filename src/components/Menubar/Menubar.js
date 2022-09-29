@@ -1,5 +1,5 @@
 import React from "react";
-
+// import Blog from "../Blog/Blog";
 const Menubar = () => {
   return (
     <div>
@@ -23,10 +23,10 @@ const Menubar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="./">
+            <a class="nav-item nav-link active" href="../../index.js">
               Home
             </a>
-            <a class="nav-item nav-link" href="./">
+            <a class="nav-item nav-link" href="../Blog/Blog.js">
               Blog
             </a>
           </div>
