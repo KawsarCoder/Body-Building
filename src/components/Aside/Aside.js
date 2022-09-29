@@ -1,6 +1,10 @@
 import React from "react";
+// import Cart from "../Cart/Cart";
 
-const Aside = () => {
+const Aside = (props) => {
+  const { durations } = props;
+  // console.log(durations);
+  // console.log(props);
   return (
     <div className="position-absolute rounded bg-white p-4 top-0 end-0 w-25">
       <div className="d-flex">
@@ -54,9 +58,7 @@ const Aside = () => {
       <div className="mt-5">
         <h4>Exercise Details:</h4>
         <div className="bg-secondary rounded px-4 py-2 text-light">
-          <h5>
-            Exercise Time: <span></span> s
-          </h5>
+          <h5>Exercise Time: {durations} m</h5>
         </div>
         <div className="bg-secondary rounded  px-4 py-2 text-light mt-3">
           <h5>
@@ -65,7 +67,7 @@ const Aside = () => {
         </div>
       </div>
       <div className="row">
-        <button className=" border mt-5 p-3 bg-primary fw-bold fs-5 text-white rounded">
+        <button className=" border mt-5 py-3 bg-primary fw-bold fs-5 text-white rounded">
           Complete Activity
         </button>
       </div>
