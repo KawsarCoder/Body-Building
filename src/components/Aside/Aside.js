@@ -38,19 +38,19 @@ const Aside = (props) => {
         <h4>My Health Info</h4>
         <div className="bg-secondary text-light p-4 rounded mb-5 ">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-4">
               <h4>
                 75<span className="fw-light fs-5">kg </span>
               </h4>
               <span> Weight</span>
             </div>
-            <div className="col-lg-4">
+            <div className="col-4">
               <h4>
                 6.5<span className="fw-light fs-5">inch </span>
               </h4>
               <span> Height</span>
             </div>
-            <div className="col-lg-4">
+            <div className="col-4">
               <h4>
                 25<span className="fw-light fs-5">yrs </span>
               </h4>
@@ -64,26 +64,26 @@ const Aside = (props) => {
           <div className="row bg-secondary p-3 rounded justify-content-center">
             <button
               onClick={() => brakeTimeClick(20)}
-              className="col-lg-2 mx-2 bg-white rounded-circle border"
+              className="col-2 mx-2 bg-white rounded-circle border"
             >
               <span>20</span>s
             </button>
             <button
               onClick={() => brakeTimeClick(30)}
-              className="col-lg-2 mx-2 bg-white rounded-circle border"
+              className="col-2 mx-2 bg-white rounded-circle border"
             >
               <span>30</span>s
             </button>
             <button
               onClick={() => brakeTimeClick(40)}
-              className="col-lg-2 mx-2 bg-white rounded-circle border"
+              className="col-2 mx-2 bg-white rounded-circle border"
             >
               <span>40</span>s
             </button>
 
             <button
               onClick={() => brakeTimeClick(50)}
-              className="col-lg-2 mx-2 bg-white rounded-circle border"
+              className="col-2 mx-2 bg-white rounded-circle border"
             >
               <span>50</span>s
             </button>
