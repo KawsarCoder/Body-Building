@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Item from "../Item/Item";
+import "./Cart.css";
 // import Aside from "../Aside/Aside";
 import Localdb from "../Localdb/Localdb";
 
@@ -25,7 +26,7 @@ const Cart = () => {
 
   return (
     <div>
-      <div className="row w-75">
+      <div id="cart-div" className="row">
         {carts.map((cart) => (
           <Item key={cart.id} cart={cart} buttonClick={buttonClick}></Item>
         ))}

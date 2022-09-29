@@ -1,4 +1,5 @@
 import React from "react";
+import "./Aside.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -9,7 +10,7 @@ const Aside = (props) => {
       position: "top-center",
     });
   return (
-    <div className="position-absolute rounded bg-white p-4 top-0 end-0 w-25">
+    <div id="aside-div" className="rounded bg-white p-4">
       <div className="d-flex">
         <div className=" w-25 h-25 me-3">
           <img
@@ -25,20 +26,24 @@ const Aside = (props) => {
       </div>
       <div className="bg-secondary text-light p-4 rounded my-5">
         <div className="row">
-          <h4 className="col-lg-4">
-            75<span className="fw-light fs-5">kg </span>
-          </h4>
-          <h4 className="col-lg-4">
-            6.5<span className="fw-light fs-5">inch </span>
-          </h4>
-          <h4 className="col-lg-4">
-            25<span className="fw-light fs-5">yrs </span>
-          </h4>
-        </div>
-        <div className="row">
-          <span className="col-lg-4"> Weight</span>
-          <span className="col-lg-4"> Height</span>
-          <span className="col-lg-4"> Age</span>
+          <div className="col-lg-4">
+            <h4>
+              75<span className="fw-light fs-5">kg </span>
+            </h4>
+            <span> Weight</span>
+          </div>
+          <div className="col-lg-4">
+            <h4>
+              6.5<span className="fw-light fs-5">inch </span>
+            </h4>
+            <span> Height</span>
+          </div>
+          <div className="col-lg-4">
+            <h4>
+              25<span className="fw-light fs-5">yrs </span>
+            </h4>
+            <span> Age</span>
+          </div>
         </div>
       </div>
       <div>
@@ -76,10 +81,7 @@ const Aside = (props) => {
           <h5>Exercise Time: {durations} m</h5>
         </div>
         <div className="bg-secondary rounded  px-4 py-2 text-light mt-3">
-          <h5>
-            Break Time: {brakes}
-            <span></span> s
-          </h5>
+          <h5>Break Time: {brakes} s</h5>
         </div>
       </div>
       <div className="row">

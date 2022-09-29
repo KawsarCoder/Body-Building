@@ -13,7 +13,7 @@
     "name": "Lunges",
     "time": "20",
     "age": "15-40",
-    "details": "Lunges increase muscle mass to build up strength and tone your body, especially your core, butt, and legs."
+    "details": "Lunges increase muscle mass to build up strength and tone your body, especially your core, butt, and legs. This is very goog exercise"
   },
   {
     "id": "103",
@@ -21,7 +21,7 @@
     "name": "Squats",
     "time": "10",
     "age": "15-40",
-    "details": "Start standing with feet wider than shoulders, toes turned out so inner thighs point forward. · Clasp hands in front of chest."
+    "details": "Start standing with feet wider than shoulders, toes turned out so inner thighs point forward. This exercise make your body fit, healthy and grow you muscle by doing everyday."
   },
   {
     "id": "104",
@@ -29,7 +29,7 @@
     "name": "Dumbbell rows",
     "time": "90",
     "age": "15-40",
-    "details": "Dumbbell rows put special emphasis on your back muscles, including the latissimus dorsi, posterior deltoids, teres major, trapezius, and rhomboids."
+    "details": "Dumbbell rows put special emphasis on your back muscles, including the latissimus dorsi."
   },
   {
     "id": "105",
@@ -37,7 +37,7 @@
     "name": "Single-leg deadlifts",
     "time": "90",
     "age": "15-40",
-    "details": "The single-leg RDL works all the same muscles as any other deadlift variant, so you know you're getting a great workout for your glutes, hamstrings, lats, and spinal erectors (just to name a few)."
+    "details": "The single-leg RDL works all the same muscles as any other deadlift variant."
   },
   {
     "id": "106",
@@ -45,6 +45,6 @@
     "name": "Side planks",
     "time": "90",
     "age": "15-40",
-    "details": "Side planks work the deep spinal stabilizing muscle quadratus lumborum . Keeping this muscle strong can help reduce your risk of a back injury. "
+    "details": "Side planks work the deep spinal stabilizing muscle quadratus lumborum ."
   }
 ]
