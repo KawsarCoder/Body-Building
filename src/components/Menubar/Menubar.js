@@ -3,15 +3,15 @@ import React from "react";
 const Menubar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a
-          class="navbar-brand bg-info p-2 fw-bold rounded text-white ms-3"
+          className="navbar-brand bg-info p-2 fw-bold rounded text-white ms-3"
           href="./"
         >
           Build Your Body
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
@@ -19,14 +19,14 @@ const Menubar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="../../index.js">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-item nav-link active" href="../../index.js">
               Home
             </a>
-            <a class="nav-item nav-link" href="../../index.js">
+            <a className="nav-item nav-link" href="../../index.js">
               Blog
             </a>
           </div>

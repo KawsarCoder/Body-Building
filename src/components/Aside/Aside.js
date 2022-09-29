@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Aside = (props) => {
   const { durations, brakeTimeClick, brakes } = props;
-  // toast function 
+  // toast function
   const notify = () =>
     toast.success("Congratulations, You're done well! Keep it up!!!", {
       position: "top-center",
@@ -34,77 +34,80 @@ const Aside = (props) => {
         </div>
       </div>
       {/* my health info  */}
-      <div className="bg-secondary text-light p-4 rounded my-5">
-        <div className="row">
-          <div className="col-lg-4">
-            <h4>
-              75<span className="fw-light fs-5">kg </span>
-            </h4>
-            <span> Weight</span>
-          </div>
-          <div className="col-lg-4">
-            <h4>
-              6.5<span className="fw-light fs-5">inch </span>
-            </h4>
-            <span> Height</span>
-          </div>
-          <div className="col-lg-4">
-            <h4>
-              25<span className="fw-light fs-5">yrs </span>
-            </h4>
-            <span> Age</span>
+      <div className="my-5">
+        <h4>My Health Info</h4>
+        <div className="bg-secondary text-light p-4 rounded mb-5 ">
+          <div className="row">
+            <div className="col-lg-4">
+              <h4>
+                75<span className="fw-light fs-5">kg </span>
+              </h4>
+              <span> Weight</span>
+            </div>
+            <div className="col-lg-4">
+              <h4>
+                6.5<span className="fw-light fs-5">inch </span>
+              </h4>
+              <span> Height</span>
+            </div>
+            <div className="col-lg-4">
+              <h4>
+                25<span className="fw-light fs-5">yrs </span>
+              </h4>
+              <span> Age</span>
+            </div>
           </div>
         </div>
-      </div>
-      {/* exercise break time  */}
-      <div>
-        <h4>Break Time</h4>
-        <div className="row bg-secondary p-3 rounded justify-content-center">
-          <button
-            onClick={() => brakeTimeClick(20)}
-            className="col-lg-2 mx-2 bg-white rounded-circle border"
-          >
-            <span>20</span>s
-          </button>
-          <button
-            onClick={() => brakeTimeClick(30)}
-            className="col-lg-2 mx-2 bg-white rounded-circle border"
-          >
-            <span>30</span>s
-          </button>
-          <button
-            onClick={() => brakeTimeClick(40)}
-            className="col-lg-2 mx-2 bg-white rounded-circle border"
-          >
-            <span>40</span>s
-          </button>
+        {/* exercise break time  */}
+        <div>
+          <h4>Break Time</h4>
+          <div className="row bg-secondary p-3 rounded justify-content-center">
+            <button
+              onClick={() => brakeTimeClick(20)}
+              className="col-lg-2 mx-2 bg-white rounded-circle border"
+            >
+              <span>20</span>s
+            </button>
+            <button
+              onClick={() => brakeTimeClick(30)}
+              className="col-lg-2 mx-2 bg-white rounded-circle border"
+            >
+              <span>30</span>s
+            </button>
+            <button
+              onClick={() => brakeTimeClick(40)}
+              className="col-lg-2 mx-2 bg-white rounded-circle border"
+            >
+              <span>40</span>s
+            </button>
 
+            <button
+              onClick={() => brakeTimeClick(50)}
+              className="col-lg-2 mx-2 bg-white rounded-circle border"
+            >
+              <span>50</span>s
+            </button>
+          </div>
+        </div>
+        {/* exercise all details  */}
+        <div className="mt-5">
+          <h4>Exercise Details:</h4>
+          <div className="bg-secondary rounded px-4 py-2 text-light">
+            <h5>Exercise Time: {durations} m</h5>
+          </div>
+          <div className="bg-secondary rounded  px-4 py-2 text-light mt-3">
+            <h5>Break Time: {brakes ? brakes : 0} s</h5>
+          </div>
+        </div>
+        <div className="row">
           <button
-            onClick={() => brakeTimeClick(50)}
-            className="col-lg-2 mx-2 bg-white rounded-circle border"
+            onClick={notify}
+            className=" border mt-5 py-2 bg-primary fw-bold fs-5 text-white rounded"
           >
-            <span>50</span>s
+            Complete Activity
           </button>
+          <ToastContainer />
         </div>
-      </div>
-      {/* exercise all details  */}
-      <div className="mt-5">
-        <h4>Exercise Details:</h4>
-        <div className="bg-secondary rounded px-4 py-2 text-light">
-          <h5>Exercise Time: {durations} m</h5>
-        </div>
-        <div className="bg-secondary rounded  px-4 py-2 text-light mt-3">
-          <h5>Break Time: {brakes ? brakes : 0} s</h5>
-        </div>
-      </div>
-      <div className="row">
-        <button
-          onClick={notify}
-          className=" border mt-5 py-2 bg-primary fw-bold fs-5 text-white rounded"
-        >
-          Complete Activity
-        </button>
-        <ToastContainer />
       </div>
     </div>
   );
