@@ -2,9 +2,9 @@ import React from "react";
 // import Cart from "../Cart/Cart";
 
 const Aside = (props) => {
-  const { durations } = props;
+  const { durations, brakes, brakeTimeClick } = props;
   // console.log(durations);
-  // console.log(props);
+  console.log(props);
   return (
     <div className="position-absolute rounded bg-white p-4 top-0 end-0 w-25">
       <div className="d-flex">
@@ -41,16 +41,28 @@ const Aside = (props) => {
       <div>
         <h4>Break Time</h4>
         <div className="row bg-secondary p-3 rounded justify-content-center">
-          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+          <button
+            onClick={() => brakeTimeClick(20)}
+            className="col-lg-2 mx-2 bg-white rounded-circle border"
+          >
             <span>20</span>s
           </button>
-          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+          <button
+            onClick={() => brakeTimeClick(30)}
+            className="col-lg-2 mx-2 bg-white rounded-circle border"
+          >
             <span>30</span>s
           </button>
-          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+          <button
+            onClick={() => brakeTimeClick(40)}
+            className="col-lg-2 mx-2 bg-white rounded-circle border"
+          >
             <span>40</span>s
           </button>
-          <button className="col-lg-2 mx-2 bg-white rounded-circle border">
+          <button
+            onClick={() => brakeTimeClick(50)}
+            className="col-lg-2 mx-2 bg-white rounded-circle border"
+          >
             <span>50</span>s
           </button>
         </div>
@@ -62,7 +74,8 @@ const Aside = (props) => {
         </div>
         <div className="bg-secondary rounded  px-4 py-2 text-light mt-3">
           <h5>
-            Break Time: <span></span> s
+            Break Time: {brakes}
+            <span></span> s
           </h5>
         </div>
       </div>

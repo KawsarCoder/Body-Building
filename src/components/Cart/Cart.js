@@ -5,6 +5,7 @@ import Aside from "../Aside/Aside";
 const Cart = () => {
   const [carts, setCarts] = useState([]);
   const [durations, setDurations] = useState(0);
+  const [brakes, setBrakes] = useState(0);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -13,6 +14,13 @@ const Cart = () => {
   let buttonClick = (time) => {
     setDurations(durations + parseFloat(time));
   };
+
+  let brakeTimeClick = (time) => {
+    // console.log(time);
+    setBrakes(parseFloat(time));
+    localStorage.setItem("brake", time);
+  };
+
   return (
     <div>
       <div className="row w-75">
@@ -20,7 +28,11 @@ const Cart = () => {
           <Item key={cart.id} cart={cart} buttonClick={buttonClick}></Item>
         ))}
       </div>
-      <Aside durations={durations}></Aside>
+      <Aside
+        durations={durations}
+        brakes={brakes}
+        brakeTimeClick={brakeTimeClick}
+      ></Aside>
     </div>
   );
 };
